@@ -1,0 +1,47 @@
+{
+  "tasks": [
+    {
+      "task_id": "t1",
+      "agent": "AgentA",
+      "description": "First task - no dependencies",
+      "dependencies": [],
+      "status": "completed",
+      "result": "t1 result",
+      "error": null
+    },
+    {
+      "task_id": "t2",
+      "agent": "AgentC",
+      "description": "Modified description for t2",
+      "dependencies": [
+        "t1"
+      ],
+      "status": "pending",
+      "result": null,
+      "error": null
+    },
+    {
+      "task_id": "t3",
+      "agent": "AgentA",
+      "description": "Third task - depends on t2",
+      "dependencies": [
+        "t2"
+      ],
+      "status": "pending",
+      "result": null,
+      "error": null
+    },
+    {
+      "task_id": "t4",
+      "agent": "AgentC",
+      "description": "Fourth task",
+      "dependencies": [
+        "t1"
+      ],
+      "status": "pending",
+      "result": null,
+      "error": null
+    }
+  ],
+  "completed": false
+}
