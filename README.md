@@ -49,6 +49,4 @@ npm run dev
 
 ## Contact
 
-![Contact QR Code](contact.png)
-
 Scan the QR code to connect with me
